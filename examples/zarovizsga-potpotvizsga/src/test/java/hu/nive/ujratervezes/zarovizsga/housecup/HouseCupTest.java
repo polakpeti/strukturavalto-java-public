@@ -23,8 +23,8 @@ class HouseCupTest {
     void init() throws SQLException {
         dataSource = new MariaDbDataSource();
         dataSource.setUrl("jdbc:mariadb://localhost:3306/employees?useUnicode=true");
-        dataSource.setUser("employees");
-        dataSource.setPassword("employees");
+        dataSource.setUser("root");
+        dataSource.setPassword("root");
 
         houseCup = new HouseCup(dataSource);
 
